@@ -138,3 +138,5 @@ specific_ss.add(when: 'CONFIG_SBSA_REF', if_true: files('sbsa_ec.c'))
 
 # HPPA devices
 softmmu_ss.add(when: 'CONFIG_LASI', if_true: files('lasi.c'))
+
+softmmu_ss.add(when: 'CONFIG_DPE', if_true: files('dpe.c'))
